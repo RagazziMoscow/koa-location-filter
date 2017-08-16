@@ -1,0 +1,35 @@
+{
+  "name": "koa-location-filter",
+  "version": "1.0.0",
+  "description": "koa middleware filtering requests depenging on user's location",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RagazziMoscow/koa-location-filter.git"
+  },
+  "keywords": [
+    "koa",
+    "middleware",
+    "location",
+    "ip",
+    "country",
+    "city",
+    "latitude",
+    "longitude"
+  ],
+  "author": "aerodromio <zzaerodromio@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RagazziMoscow/koa-location-filter/issues"
+  },
+  "homepage": "https://github.com/RagazziMoscow/koa-location-filter#readme",
+  "dependencies": {
+    "koa-location": "^1.0.3"
+  },
+  "devDependencies": {
+    "koa": "^2.3.0"
+  }
+}
