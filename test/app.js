@@ -4,13 +4,14 @@ var filter = require('./../lib');
 
 filter(app, {
 	blackList: {
-		RU: 'Русне вход запрещён, она сидит на бутылке',
+		RU: 'Вам запрещён доступ',
 		BG: 'Ne moze bee',
-		DE: 'You cant request it'
+		US: 'You cant request it'
 	}
 });
  app.use(async (ctx, next) => {
  	ctx.body = 'Ответ успешен';
+ 	console.log(ctx.request.location);
  });
 
 
