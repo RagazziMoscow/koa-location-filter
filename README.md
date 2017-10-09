@@ -31,20 +31,20 @@ var app = new Koa();
 var filter = require('koa-location-filter');
 
 filter(app, {
-	blackList: {
-		RU: 'Вам запрещён доступ',
-		BG: 'Ne moze bee',
-		US: 'Access is denied'
-	}
+    blackList: {
+	RU: 'Вам запрещён доступ',
+	BG: 'Ne moze bee',
+	US: 'Access is denied'
+    }
 });
 
 app.use(async (ctx, next) => {
-	ctx.body = 'Success';
+    ctx.body = 'Success';
 });
 
 var port = 8000;
 app.listen(port, ()=> {
-	console.log('Сервер работает на порту ' + port);
+    console.log('Сервер работает на порту ' + port);
 });
 ```
 
